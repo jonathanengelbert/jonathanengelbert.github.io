@@ -17,7 +17,7 @@ zoom: 4,
 mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 ocmlink = '<a href="http://thunderforest.com/">Thunderforest</a>';
 L.tileLayer(
-    'http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+    'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=0a4838a21884432dae4f2a3b8045380f', {
     attribution: '&copy; '+mapLink+' Contributors & '+ocmlink 
    
     }).addTo(map);//adds the tile to the map, as well as the attribution.
