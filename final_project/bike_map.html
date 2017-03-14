@@ -1,0 +1,50 @@
+<!-- This project builds on the previous two labs. Features added since last lab:-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Cycling in the US</title>
+    
+<link rel="stylesheet" 
+type="text/css" href="style.css"><!--my css file for the html-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css"/><!--leflet's css library location-->
+<link rel="stylesheet" href="../final_project/routing/leaflet-routing-machine.css" />        
+<link rel="stylesheet"
+href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.
+css">
+<link rel="stylesheet"
+href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-
+theme.min.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-
+awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Leaflet.awesome-markers.css">    
+    </head>
+
+    <body>
+        
+        
+        <script src="cities.js"></script><!-- calls external js file with my geoJSON objects-->
+        <script src="states.js"></script><!-- calls external js file with US states delineation-->
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js">
+        </script> <!--calls Leaflet JS library-->  
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><!--calls bootstrap library-->
+        <script src="Leaflet.awesome-markers.js"></script>  
+        <div id="map" style="width: auto; height: 800px; margin-left:auto; margin-right:auto" ></div><!--container for the map-->
+        <script src="bike_map.js"></script><!--calls the active js file.-->
+        <script src= "../final_project/routing/leaflet-routing-machine.js"></script>
+        <script src="../final_project/routing/Control.Geocoder.js"></script>
+        <script
+src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js
+"></script>
+<script src="Leaflet.awesome-markers.js"></script>
+<!-- My "extra" feature below. It's a routing machine, equipped with a searcher powered by the Google API.-->        
+        <script>L.Routing.control({
+        position:"bottomleft",
+        routeWhileDragging: true,
+        geocoder: L.Control.Geocoder.google('AIzaSyBcoYcAVBEdqXyDp1juMwZjveyOBL7EAk0')
+                }).addTo(map);
+        </script>
+     
+</body>
+ <!-- AIzaSyBcoYcAVBEdqXyDp1juMwZjveyOBL7EAk0  -->   
+</html>
