@@ -9,7 +9,7 @@ var map = L.map('map',
 
 center: [39.810492, -98.556061],
 
-zoom: 4,
+zoom: 5,
 
 });
 
