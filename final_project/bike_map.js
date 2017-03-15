@@ -9,7 +9,7 @@ var map = L.map('map',
 
 center: [39.810492, -98.556061],
 
-zoom: 5,
+zoom: 4,
 
 });
 
@@ -196,11 +196,7 @@ L.Routing.control({
     routeWhileDragging: true
 }).addTo(map);
 
-var redMarker = L.AwesomeMarkers.icon({
-icon: 'tint',
-markerColor: 'red'
-});
-L.marker([35.10418, -106.62987], {icon: redMarker}).addTo(map);
+
 
 
 
