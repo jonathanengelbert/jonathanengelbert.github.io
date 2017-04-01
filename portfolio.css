@@ -1,0 +1,72 @@
+/*
+File name: portfolio_index.html
+Original local path: C:\Users\jonat\Desktop\html\portfolio
+By: Jonathan Engelbert
+Last Modified: 03/30/2017
+
+*This sheet styles all pages of "portfolio.html", except pages <> <> and <> which contain web maps
+
+*This is a Mastersheet
+
+*********************CONTENTS**********************************
+
+1 ** Typograhpy
+2 ** Header Layout
+3 ** 
+
+*/
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 1 -  Typography  */
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 1px 1px 7px black;
+}
+
+/* 2 -  Header Layout */
+
+nav {
+  height: 140px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+}
+
+/* 2 - Main layout */
+
+article {
+    flex: 4;
+    margin: 30px 50px 20px;
+    padding: 10px ;
+    background-color: bisque
+}
