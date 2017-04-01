@@ -22,7 +22,7 @@ Last Modified: 03/30/2017
 <head>
   <meta charset="utf-8">
   <title>Jonathan Engelbert | Portfolio</title>
-  <link rel="stylesheet"  href="portfolio.css">
+  <link rel="stylesheet"  href="../portfolio.css">
   <!--[if lt IE 9]>
       <script   src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]--> 
