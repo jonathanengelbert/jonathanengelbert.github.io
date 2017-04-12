@@ -2,7 +2,7 @@
 File name: portfolio.css
 Original local path: C:\Users\jonat\Desktop\html\portfolio
 By: Jonathan Engelbert
-Last Modified: 04/07/2017
+Last Modified: 04/11/17
 
 *This sheet styles all pages of "portfolio.html", except pages <> <> and <> which contain web maps
 
@@ -150,7 +150,7 @@ line-height: 1.4rem;
 
 #staticmaps {
     
-    width: 43%;
+    width: 38%;
     float: left;
    
     
@@ -158,7 +158,7 @@ line-height: 1.4rem;
 
 #webmaps{
      
-    width: 43%;
+    width: 38%;
     float: right;
     
     
