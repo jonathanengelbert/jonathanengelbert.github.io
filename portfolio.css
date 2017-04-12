@@ -1,8 +1,8 @@
 /*
-File name: portfolio_index.html
+File name: portfolio.css
 Original local path: C:\Users\jonat\Desktop\html\portfolio
 By: Jonathan Engelbert
-Last Modified: 03/30/2017
+Last Modified: 04/07/2017
 
 *This sheet styles all pages of "portfolio.html", except pages <> <> and <> which contain web maps
 
@@ -10,63 +10,193 @@ Last Modified: 03/30/2017
 
 *********************CONTENTS**********************************
 
-1 ** Typograhpy
-2 ** Header Layout
-3 ** 
+1 ** Typography
+2 ** Body and Html Layout
+3 ** General Layout
+3 ** Header Layout
+4 ** Section Layout
+5 ** Footer Layout
 
-*/
-
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
+***************************************************************
 
 /* 1 -  Typography  */
+
+
+@font-face {
+    font-family: 'naporegular';
+    src: url('fonts/napo-regular_trial-webfont.woff2') format('woff2'),
+         url('fonts/napo-regular_trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rubikbold';
+    src: url('fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 h1 {
     text-align: center;
     font-size: 4em;
     text-shadow: 1px 1px 7px black;
+    font-family: 'rubikbold';
+    margin: 0px;
 }
 
-/* 2 -  Header Layout */
+h2 {
+    
+    text-align: center;
+    font-size: 4rem;
+    color: #3d3d5c;
+    text-decoration: 
+    
+}
 
-nav {
-  height: 140px;
-  flex: 100%;
-  display: flex;
+h3 {
+    
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* 2 -  General layout  */
+
+
+html, body {
+  margin: 0 auto;    
+  padding: 0;
+  font-family: 'naporegular';
+  color: #52527a;
+  
+
+
+    
+}
+
+
+
+
+/* 3 -  Header Layout */
+
+
+nav {    
+    
+    
+    flex: 100%;
+    background-color: darkblue;
+    height: 140px;
+    
 }
 
 nav ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
+    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex: 1;
 }
 
 nav li {
-  display: inline;
-  text-align: center;
-  flex: 1;
+  
+    display: inline;
+    text-align: center;
+    flex: 1;
 }
 
-nav a, nav span {
-  display: inline-block;
-  font-size: 2rem;
-  height: 3rem;
-  line-height: 1.7;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-
+nav a {
+    
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 4.5;
+    
 }
 
-/* 2 - Main layout */
 
-article {
-    flex: 4;
-    margin: 30px 50px 20px;
-    padding: 10px ;
-    background-color: bisque
+
+/* 4 - Section Layout  */
+
+#intro {
+  
+  margin-bottom: 100px;
+ 
+  height: 500px;
+  background: url(images/gis_blue_header.jpg)
+              no-repeat 
+              100%;
+  background-size: cover;
+ 
 }
+
+#mapsection {
+
+width: 90%; 
+position: relative;
+margin: 0 auto;
+line-height: 1.4rem;    
+   
+}
+
+#mapsection > h3{
+    
+    padding-bottom: 80px;
+}
+
+#staticmaps {
+    
+    width: 43%;
+    float: left;
+   
+    
+}
+
+#webmaps{
+     
+    width: 43%;
+    float: right;
+    
+    
+}
+
+#mapsection img {
+    
+    height: 90px;
+    float: left;
+    padding: 10px;
+    
+}
+
+    
+
+/* 5 - Footer Layout  */
+
+footer {
+
+;
+    height: 120px;  
+    background-color: skyblue
+}
+
+footer p {
+   
+    
+   font-family: sans-serif;
+   color: #1f1f2e;
+   font-size: 1.5rem;    
+   text-align: center;
+   line-height: 5;
+   
+}
+
+section {
+    
+    padding-bottom: 100px;
+}
+
+.button {background-color: #008CBA;} /* Blue */
