@@ -1,68 +1,95 @@
-<!-- 
-File name: portfolio_index.html
-Original local path: C:\Users\jonat\Desktop\html\portfolio
-By: Jonathan Engelbert
-Last Modified: 03/30/2017
+    <!-- 
+    File name: portfolio_index.html
+    Original local path: C:\Users\jonat\Desktop\html\portfolio
+    By: Jonathan Engelbert
+    Last Modified: 03/30/2017
 
-* This is the index page of my portfolio, currently hosted at https://github.com/jonathanengelbert
+    * This is the index page of my portfolio, currently hosted at https://github.com/jonathanengelbert
 
-* The master stylesheet is "portfolio.css"
-
-
-*********************CONTENTS**********************************
-
-1 ** 
+    * The master stylesheet is "portfolio.css"
 
 
--->
+    *********************CONTENTS**********************************
 
-<!DOCTYPE html>
+    1 ** 
+
+
+    -->
+
+    <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
+  
   <title>Jonathan Engelbert | Portfolio</title>
-  <link rel="stylesheet"  href="../portfolio.css">
-  <!--[if lt IE 9]>
-      <script   src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--> 
+  
+  <link rel="stylesheet"  href="portfolio.css">
+      <!--[if lt IE 9]>
+          <script   src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
 </head>
-    
-<body id="home">
+
+<body>
   <header>
-    <h1>Jonathan Engelbert</h1>
-    <nav id="navbar">
-    <ul>
-      <li><a href="jonathanengelbert.github.io/final_project/bike_map.html">Maps</a></li>
-      <li><a href="#">Projects</a></li>      
-      <li><a href="#">Resume</a></li>    
-      <li><a href="#">Contact</a></li>
-    </ul>    
-    </nav>
-    </header>
+   
+      <nav id="navbar">
+        <ul>
+          <li><a href="#">Gis</a></li>
+          <li><a href="#">Projects</a></li>      
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>    
+      </nav>
+  </header>
+
+<main>
+    <section id ="intro">
+         
     
-    <main>
-      <article id ="1">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-      </article>
-      
-      <article>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-      
-      
+    </section>
+
+    <section id="mapsection">
+        <h2> GIS</h2>
+        <h3>Maps and Spatial Analysis</h3>
+        <div id="staticmaps">
+        <a href="#"><img src="images/layer-512.png"></a> 
+        <p>Static maps designed on ArcMap, QGIS and Tableau. Examples of spatial analysis, data classification and cartographic conventions.</p>
+        </div>
+        <button type="button">Click Me!</button>
+        <div id="webmaps">
+        <img src="images/webmap.ico">
+        <p>Web Maps written in JavaScript and cloud based platforms.</p>
+        </div>
         
-      </article>
+        
+    </section>
     
-    </main>
+    <section id="projects">
+        <h2> Projects</h2>
+          <h3>Automation, apps and scripts</h3>
+
+    </section>
+   
+    <section id="research">
+        <h2> Research</h2>
+         <h3>From Cultural Geography to Sustainable Urban Transportation</h3> 
+
+    </section>
     
+  <section id="contact">
+        <h2>Resume</h2>
+        
+
+   </section> 
+</main>
+
+<footer>
+  <p> &copy; 2017 Coded and mantained by <b>Jonathan Engelbert</b>   </p> 
     
-    </body>
-
-
-
-
-
-
+</footer>
+    
+</body>
 
 </html>
-  
