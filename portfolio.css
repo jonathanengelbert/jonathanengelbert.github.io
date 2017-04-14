@@ -2,7 +2,7 @@
 File name: portfolio.css
 Original local path: C:\Users\jonat\Desktop\html\portfolio
 By: Jonathan Engelbert
-Last Modified: 04/11/17
+Last Modified: 04/13/2017
 
 *This sheet styles all pages of "portfolio.html", except pages <> <> and <> which contain web maps
 
@@ -11,11 +11,15 @@ Last Modified: 04/11/17
 *********************CONTENTS**********************************
 
 1 ** Typography
-2 ** Body and Html Layout
-3 ** General Layout
+2 ** General Layout
 3 ** Header Layout
 4 ** Section Layout
-5 ** Footer Layout
+5 ** Intro
+6 ** Map Section
+7 ** Projects Section
+8 ** Research Section
+9 ** Contact Section
+10 ** Footer
 
 ***************************************************************
 
@@ -54,7 +58,7 @@ h2 {
     font-size: 4rem;
     color: #3d3d5c;
     text-decoration: 
-    
+        
 }
 
 h3 {
@@ -88,6 +92,7 @@ nav {
     
     flex: 100%;
     background-color: darkblue;
+    background: linear-gradient(darkblue, white);
     height: 140px;
     
 }
@@ -122,6 +127,52 @@ nav a {
 
 /* 4 - Section Layout  */
 
+
+
+section {
+    
+    
+    padding-bottom: 200px;
+    font-size: 25px;
+    width: 90%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem;
+    
+    
+}
+
+section p {
+    
+    line-height: 1.5;
+    display: block;
+}
+
+section img {
+    
+    height: 90px;
+    padding: 10px;
+       
+}
+
+section h2 {
+    
+    padding-top:140px;
+}
+
+section h3 {
+    
+    padding-bottom: 80px;
+}
+
+section a {
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5 - Intro  */
+
 #intro {
   
   margin-bottom: 100px;
@@ -134,6 +185,8 @@ nav a {
  
 }
 
+/* 6 - Map Section  */
+
 #mapsection {
 
 width: 90%; 
@@ -142,6 +195,8 @@ margin: 0 auto;
 line-height: 1.4rem;    
    
 }
+
+/* Left Column */
 
 #mapsection > h3{
     
@@ -156,25 +211,120 @@ line-height: 1.4rem;
     
 }
 
+/* Right Column */
+
 #webmaps{
      
     width: 38%;
     float: right;
+    
+
     
     
 }
 
 #mapsection img {
     
-    height: 90px;
     float: left;
-    padding: 10px;
+    
     
 }
 
-    
+/* 7 - Projects Section */
 
-/* 5 - Footer Layout  */
+
+
+#projects {
+    
+width: 90%; 
+position: relative;
+margin: 0 auto;
+line-height: 1.4rem; 
+    
+}
+
+/* Left Column */
+
+#apps {
+    
+    width: 38%;
+    float: left;
+}
+
+#apps img {
+    
+float: left
+    
+}
+
+/* Right Column */
+
+#python {
+    
+    width: 38%;
+    float: right;
+}
+
+
+
+#python img{
+    
+    float: left;
+}
+
+
+/* 8 - Research Section */
+
+#research div {
+    
+    width: 45%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem;
+    font: 25px;
+    
+}
+
+#research img {
+    
+    float: left;
+    display: block;
+    margin-left: 40%;
+    
+    
+}
+
+
+/*9 - Resume Section */ 
+
+#resume div {
+    
+    width: 45%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem; 
+    
+}
+
+#resume img {
+    
+    float: left;
+    display: block;
+    margin-left: 38%;
+}
+    
+/* 10 - Contact Section */
+
+#contact {
+    
+    width: 90%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem; 
+    
+}
+
+/* 11 - Footer Layout  */
 
 footer {
 
@@ -194,9 +344,4 @@ footer p {
    
 }
 
-section {
-    
-    padding-bottom: 100px;
-}
 
-.button {background-color: #008CBA;} /* Blue */
