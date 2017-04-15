@@ -23,24 +23,54 @@
   <meta charset="utf-8">
   
   <title>Jonathan Engelbert | Portfolio</title>
-  
-  <link rel="stylesheet"  href="http://jonathanengelbert.github.io/portfolio.css">
+  <script src="portfolio.js"></script>
+  <link rel="stylesheet"  href="/portfolio.css">
       <!--[if lt IE 9]>
-          <script   src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]--> 
+          <script   src="//html5shiv.googlecode.com/svn/trunk/html5.j   s"></script>
+        <![endif]-->
+    <script type="text/javascript" src="/portfolio.js"></script>
 </head>
 
 <body>
   <header>
    
-      <nav id="navbar">
+      <nav>
+        <div class="nav mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>  
+        </div>
         <ul>
-          <li><a href="#">Gis</a></li>
-          <li><a href="#">Projects</a></li>      
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>    
+               
+          <li id="home"><a href="#home">Jonathan Engelbert | Portfolio</a></li>
+            
+            <div id="links">
+              <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">GIS</a>
+              <div class="dropdown-content">
+                <a href="#">Static Maps</a>
+                <a href="#">Web Maps</a>
+                <a href="#">Spatial Analysis</a>
+   
+              </div>
+              </li>
+             
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                <a href="#">Apps</a>
+                <a href="#">Python Scripts</a>
+    
+                </div>
+                </li>
+<!-- Kept the class "dropdown" here simply to ensure that the previously writen css would be applied to all elements. My change css rules in the future for better syntax-->
+          <li class="dropdown"><a href="#">Research</a>
+          </li>
+          <li class="dropdown"><a href="#">Resume</a>
+          </li>
+          <li class="dropdown"><a href="#">Contact</a>
+          </li>
+            </div>
+        </ul>
+
       </nav>
   </header>
 
