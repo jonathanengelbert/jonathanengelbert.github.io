@@ -24,6 +24,7 @@
   
   <title>Jonathan Engelbert | Portfolio</title>
   <link rel="stylesheet"  href="portfolio.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="portfolio.js"></script>
       <!--[if lt IE 9]>
@@ -75,58 +76,94 @@
   </header>
 
 <main>
+    <div id ="intro">
+    </div>
 
-<h2 class="subsectionheader">Static Maps</h2>
-
-
-<div class="maps">
+  <section id="mapsection">
     
+    <h2> GIS</h2>
+    <h3>Maps and Spatial Analysis</h3>
+      
+    <div id="staticmaps">
+        
     <a href="#">
-    <img class ="staticmapsimgleft"src="images/maps/minorities_std_thumb.png" alt="Minorities Map" title="Minorities Map" style="width:500px">
+      <img id="static" src="images/layer-512.png"> 
+      <p>Static maps designed on ArcMap, QGIS and Tableau</p>
     </a>
-    <h3 class="staticmapsdescription">Distribution of Minority Households in King County, Washington, USA</h3>
-  
-</div> 
-    
-<div class="maps">
-    
+          
+    </div>
+      
+    <div id="webmaps">
+      
     <a href="#">
-    <img class ="staticmapsimgright"src="images/maps/vector_map_thumb.jpg" alt="Distribution of Hospitals in Massachussets" title="Distribution of Hospitals in Massachussets" style="width:500px">
-    </a><h3 class="staticmapsdescription">Distribution of Hospitals in Massachusetts, USA</h3>
+      <img src="images/webmap.ico">
+      <p>Web Maps written in JavaScript and cloud based platforms</p>
+    </a>
+      
+      </div>
+    
+    
+        
+    </section>
+    <div id="toner"></div>    
+   
+    <section id="projects">
+      
+      <h2> Projects</h2>
+      <h3>Automation and Apps</h3>    
+        
+      <div id="apps">
+        <a href="#"><img src="images/projects.svg">
+        <p> Applications in JavaScript, C and Python</p>
+      </a>
+          
+      </div>
+      
+      <div id="python">
+        
+        <a href="#"><img src="images/python.jpg">
+        <p>Python Scripts for GIS applications and Beyond</p>
+        </a>
+      
+      </div>
 
-</div> 
+    </section>
+       
+    <section id="research">
+      
+      <h2> Research</h2>
+      <h3>From Cultural Geography to Sustainable Urban Transportation</h3> 
+      <div>
+        
+        <a href="#">
+        <img src="images/research.png">
+        </a>
+        
+        </div>
+             
+    </section>
     
-<div class="maps">
+    <section id="resume">
+      
+      <h2>Resume</h2>
+      <h3>Available for Online Viewing and Download</h3>
     
-    <a href="images/maps/minorities_std.jpg">
-    <img class ="staticmapsimgleft"src="images/maps/demographic_shifts_thumb.jpg" alt="Demographic Shifts Map" title="Demographic Shifts in King County" style="height:400px">  
-    </a><h3 class="staticmapsdescription">Tracking Demographic Shifts in the Greater Seattle Area</h3>
+      <div>
+        
+      <a href="#">
+      <img src="images/resume.png">
+      </a> 
+      
+      </div>        
 
-</div> 
-    
- 
-    
-<div class="maps">
-    
-    <a href="#">
-    <img class ="staticmapsimgright"src="images/maps/parcels_thumb.jpg" alt="Minorities Map " style="width:500px">
-    </a><h3 class="staticmapsdescription">Tracking Demographic Shifts in the Greater Seattle Area, USA</h3>
+   </section> 
+</main>
 
-</div>    
-
-<div class="maps">
-    
-    <a href="#">
-    <img class ="staticmapsimgleft"src="images/maps/access_thumb.jpg" alt="Site Suitability Analysis" title="Site Suitability Analysis" style="width:500px">
-    </a><h3 class="staticmapsdescription">Site Suitability Analysis in Los Angeles County, USA</h3>
-
-</div>    
-  
 <div id="contact">
   
   <div>
   <a href="https://github.com/jonathanengelbert"><img src="images/GitHub-Mark.png"></a>
-  <a href ="https://www.linkedin.com/in/jonathan-engelbert-72663b105/"><img src="images/linklogo.jpg"></a>
+  <a href ="https://www.linkedin.com/in/jonathan-engelbert-72663b105/"><img src="images/linklogo.jspg"></a>
   <a href ="mailto:jonathanengelbert@gmail.com"><img src="images/email.png"></a>
   </div>
     
@@ -138,4 +175,6 @@
     
 </footer>
     
-</main>
+</body>
+
+</html>
