@@ -23,12 +23,12 @@
   <meta charset="utf-8">
   
   <title>Jonathan Engelbert | Portfolio</title>
-  <script src="portfolio.js"></script>
-  <link rel="stylesheet"  href="/portfolio.css">
+  <link rel="stylesheet"  href="portfolio.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="portfolio.js"></script>
       <!--[if lt IE 9]>
           <script   src="//html5shiv.googlecode.com/svn/trunk/html5.j   s"></script>
         <![endif]-->
-    <script type="text/javascript" src="/portfolio.js"></script>
 </head>
 
 <body>
@@ -40,29 +40,29 @@
         </div>
         <ul>
                
-          <li id="home"><a href="#home">Jonathan Engelbert | Portfolio</a></li>
+          <li id="home"><a href="portfolio_index.html">Jonathan Engelbert | Portfolio</a></li>
             
             <div id="links">
               <li class="dropdown">
               <a href="javascript:void(0)" class="dropbtn">GIS</a>
               <div class="dropdown-content">
-                <a href="#">Static Maps</a>
-                <a href="http://jonathanengelbert.com/final_project/bike_map.html">Web Maps</a>
-                <a href="#">Spatial Analysis</a>
-   
+                <a href="../portfolio/static_maps.html">Static Maps</a>
+                <a href="../portfolio/web_maps.html">Web Maps</a>
+                <a href="../portfolio/spatial_analysis.html">Spatial Analysis</a>
+                
               </div>
               </li>
              
               <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Projects</a>
                 <div class="dropdown-content">
-                <a href="#">Apps</a>
-                <a href="#">Python Scripts</a>
+                <a href="../portfolio/apps.html">Apps</a>
+                <a href="../portfolio/python.html">Python Scripts</a>
     
                 </div>
                 </li>
 <!-- Kept the class "dropdown" here simply to ensure that the previously writen css would be applied to all elements. My change css rules in the future for better syntax-->
-          <li class="dropdown"><a href="#">Research</a>
+          <li class="dropdown"><a href="research.html">Research</a>
           </li>
           <li class="dropdown"><a href="#">Resume</a>
           </li>
@@ -75,92 +75,67 @@
   </header>
 
 <main>
-    <div id ="intro">
-    </div>
 
-  <section id="mapsection">
+<h2 class="subsectionheader">Static Maps</h2>
+
+
+<div class="maps">
     
-    <h2> GIS</h2>
-    <h3>Maps and Spatial Analysis</h3>
-      
-    <div id="staticmaps">
-        
     <a href="#">
-      <img src="images/layer-512.png"> 
-      <p>Static maps designed on ArcMap, QGIS and Tableau</p>
+    <img class ="staticmapsimgleft"src="images/maps/minorities_std_thumb.png" alt="Minorities Map" title="Minorities Map" style="width:500px">
     </a>
-          
-    </div>
-      
-    <div id="webmaps">
-      
-    <a href="http://jonathanengelbert.com/final_project/bike_map.html">
-      <img src="images/webmap.ico">
-      <p>Web Maps written in JavaScript and cloud based platforms</p>
-    </a>
-      
-      </div>
-        
-        
-    </section>
+    <h3 class="staticmapsdescription">Distribution of Minority Households in King County, Washington, USA</h3>
+  
+</div> 
     
-    <section id="projects">
-      
-      <h2> Projects</h2>
-      <h3>Automation and Apps</h3>    
-        
-      <div id="apps">
-        <a href="#"><img src="images/projects.svg">
-        <p> Applications in JavaScript, C and Python</p>
-      </a>
-          
-      </div>
-      
-      <div id="python">
-        
-        <a href="#"><img src="images/python.jpg">
-        <p>Python Scripts for GIS applications and Beyond</p>
-        </a>
-      
-      </div>
-
-    </section>
-   
-    <section id="research">
-      
-      <h2> Research</h2>
-      <h3>From Cultural Geography to Sustainable Urban Transportation</h3> 
-      <div>
-        
-        <a href="#">
-        <img src="images/research.png">
-        </a>
-        
-        </div>
-             
-    </section>
+<div class="maps">
     
-    <section id="resume">
-      
-      <h2>Resume</h2>
-      <h3>Available for Online Viewing and Download</h3>
+    <a href="#">
+    <img class ="staticmapsimgright"src="images/maps/vector_map_thumb.jpg" alt="Distribution of Hospitals in Massachussets" title="Distribution of Hospitals in Massachussets" style="width:500px">
+    </a><h3 class="staticmapsdescription">Distribution of Hospitals in Massachusetts, USA</h3>
+
+</div> 
     
-      <div>
-        
-      <a href="#">
-      <img src="images/resume.png">
-      </a> 
-      
-      </div>        
+<div class="maps">
+    
+    <a href="images/maps/minorities_std.jpg">
+    <img class ="staticmapsimgleft"src="images/maps/demographic_shifts_thumb.jpg" alt="Demographic Shifts Map" title="Demographic Shifts in King County" style="height:400px">  
+    </a><h3 class="staticmapsdescription">Tracking Demographic Shifts in the Greater Seattle Area</h3>
 
-   </section> 
-</main>
+</div> 
+    
+ 
+    
+<div class="maps">
+    
+    <a href="#">
+    <img class ="staticmapsimgright"src="images/maps/parcels_thumb.jpg" alt="Minorities Map " style="width:500px">
+    </a><h3 class="staticmapsdescription">Tracking Demographic Shifts in the Greater Seattle Area, USA</h3>
 
-<footer>
-  <p> &copy; 2017 Coded and mantained by <b>Jonathan Engelbert</b>   </p> 
+</div>    
+
+<div class="maps">
+    
+    <a href="#">
+    <img class ="staticmapsimgleft"src="images/maps/access_thumb.jpg" alt="Site Suitability Analysis" title="Site Suitability Analysis" style="width:500px">
+    </a><h3 class="staticmapsdescription">Site Suitability Analysis in Los Angeles County, USA</h3>
+
+</div>    
+  
+<div id="contact">
+  
+  <div>
+  <a href="https://github.com/jonathanengelbert"><img src="images/GitHub-Mark.png"></a>
+  <a href ="https://www.linkedin.com/in/jonathan-engelbert-72663b105/"><img src="images/linklogo.jpg"></a>
+  <a href ="mailto:jonathanengelbert@gmail.com"><img src="images/email.png"></a>
+  </div>
+    
+</div>
+ 
+<footer>     
+     
+<p> &copy; 2017 Coded and mantained by <b>Jonathan Engelbert</b></p> 
     
 </footer>
     
-</body>
-
-</html>
+</main>
