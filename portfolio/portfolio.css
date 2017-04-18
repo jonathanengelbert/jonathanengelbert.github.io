@@ -1,0 +1,494 @@
+/*
+File name: portfolio.css
+Original local path: C:\Users\jonat\Desktop\html\portfolio
+By: Jonathan Engelbert
+Last Modified: 04/13/2017
+
+*This sheet styles all pages of "portfolio.html", except pages <> <> and <> which contain web maps
+
+*This is a Mastersheet
+
+*********************CONTENTS**********************************
+
+1 ** Typography
+2 ** General Layout
+3 ** Header 
+4 ** Section 
+5 ** Intro
+6 ** Map Section
+7 ** Projects Section
+8 ** Research Section
+9 ** Contact Section
+10 ** Footer
+
+***************************************************************
+
+/* 1 -  Typography  */
+
+
+@font-face {
+    font-family: 'naporegular';
+    src: url('fonts/napo-regular_trial-webfont.woff2') format('woff2'),
+         url('fonts/napo-regular_trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rubikbold';
+    src: url('fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 1px 1px 7px black;
+    font-family: 'rubikbold';
+    margin: 0px;
+}
+
+h2 {
+    
+    text-align: center;
+    font-size: 4rem;
+    color: #3d3d5c;
+    text-decoration: 
+            
+}
+
+h3 {
+    
+   
+    font-size: 2rem;
+    text-align: center;
+   ;
+}
+
+.subsectionheader {
+    
+    padding-bottom: 200px; 
+    padding-top:100px;
+}
+
+/* 2 -  General layout  */
+
+
+html, body {
+  margin: 0 auto;    
+  padding: 0;
+  font-family: 'naporegular';
+  color: #52527a;
+      
+}
+
+
+/* 3 -  Header */
+
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#links{
+    
+    float:right;
+   
+}
+
+#home {
+    
+    float: left;
+  ;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:  #ccccff}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* 4 - Section */ 
+
+
+
+section {
+    
+    
+    padding-bottom: 200px;
+    font-size: 25px;
+    width: 90%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem;
+    
+    
+}
+
+section p {
+    
+    line-height: 1.5;
+    display: block;
+}
+
+section img {
+    
+    height: 90px;
+    padding: 10px;
+       
+}
+
+section h2 {
+    
+    padding-top:140px;
+    
+}
+
+section h3 {
+    
+    margin-bottom: 120px;
+    line-height: 2;
+}
+
+section a {
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 5 - Intro  */
+
+#intro {
+  
+  margin-bottom: 50px;
+ 
+  height: 500px;
+  background: url(images/gis_blue_header.jpg)
+              no-repeat 
+              100%;
+  background-size: cover;
+ 
+}
+
+/* 6 - Map Section  */
+
+#mapsection {
+
+width: 90%; 
+position: relative;
+margin: 0 auto;
+line-height: 1.4rem;    
+   
+}
+
+/* Left Column */
+
+#mapsection > h3{
+    
+    padding-bottom: 80px;
+}
+
+#staticmaps {
+    
+    width: 38%;
+    float: left;
+   
+    
+}
+
+/* Right Column */
+
+#webmaps{
+     
+    width: 38%;
+    float: right;
+    
+
+    
+    
+}
+
+#mapsection img {
+    
+    float: left;
+    
+    
+}
+
+#toner {
+    
+    background: url(images/tone_map.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-top: 100px
+}
+
+/* 7 - Projects Section */
+
+
+
+#projects {
+    
+width: 90%; 
+position: relative;
+margin: 0 auto;
+line-height: 1.4rem; 
+    
+}
+
+/* Left Column */
+
+#apps {
+    
+    width: 38%;
+    float: left;
+}
+
+#apps img {
+    
+float: left
+    
+}
+
+/* Right Column */
+
+#python {
+    
+    width: 38%;
+    float: right;
+}
+
+
+
+#python img{
+    
+    float: left;
+}
+
+#blue {
+    
+ 
+}
+
+/* 8 - Research Section */
+
+#research {
+    
+    background: url(images/blue_background_2.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+#research div {
+    
+    width: 45%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem;
+    font: 25px;
+    
+}
+
+#research img {
+    
+    float: left;
+    display: block;
+    margin-left: 40%;
+    
+    
+}
+
+
+/*9 - Resume Section */ 
+
+
+#resume div {
+    
+    width: 45%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem; 
+    
+}
+
+#resume img {
+    
+    float: left;
+    display: block;
+    margin-left: 38%;
+}
+    
+/* 10 - Contact Section */
+
+#contact {
+    
+    width: 90%; 
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.4rem; 
+    
+}
+
+/* 11 - Footer */
+
+#contact {
+    
+    margin-top: 100px;
+    width: 100%;
+    height: 130px;
+    
+
+}
+
+#contact img{
+    
+    
+    width: 80px;
+    height: 90px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
+#contact div {
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+footer {
+
+    display:block;
+    height: 100px;  
+    background-color: skyblue
+}
+
+footer p {
+   
+    
+   font-family: sans-serif;
+   color: #1f1f2e;
+   font-size: 1.5rem;    
+   text-align: center;
+   line-height: 5;
+   margin: 0;
+   
+}
+
+
+
+
+
+
+/* STATIC MAPS PAGE*/
+
+.maps {
+  
+
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+     
+}
+
+.staticmapsimgleft {
+    
+   
+    max-width: 40%;
+    float: left;
+        
+}
+
+.staticmapsimgright {
+    
+    max-width: 40%;
+    float: right;
+    
+}
+
+.staticmapsdescription {
+    
+   
+    
+    flex-wrap: wrap;
+   top: 50%;
+    
+    
+}
+
+
+/* WEB MAPS PAGE*/
+
+.iframe {
+    
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    
+    
+}
+
+.webmaps {
+    
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 100px;
+    height: 600px;
+}
