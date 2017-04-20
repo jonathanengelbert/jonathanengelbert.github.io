@@ -413,7 +413,7 @@ footer {
 
     display:block;
     height: 100px;  
-    background-color: skyblue
+    background-color: skyblue;
 }
 
 footer p {
@@ -423,7 +423,7 @@ footer p {
    color: #1f1f2e;
    font-size: 1.5rem;    
    text-align: center;
-   line-height: 5;
+   line-height: 4;
    margin: 0;
    
 }
