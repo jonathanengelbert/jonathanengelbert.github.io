@@ -75,6 +75,8 @@ h3 {
    
 }
 
+
+
 /* 2 -  General layout  */
 
 
@@ -489,4 +491,17 @@ footer p {
     background-size: cover;
     margin-bottom: 100px;
     height: 600px;
+}
+
+
+/* RESEARCH SECTION */
+
+.description {
+    
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    width:80%;
+    
 }
