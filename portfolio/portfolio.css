@@ -1,4 +1,4 @@
-/*
+    /*
 File name: portfolio.css
 Original local path: C:\Users\jonat\Desktop\html\portfolio
 By: Jonathan Engelbert
@@ -184,7 +184,7 @@ section img {
 
 section h2 {
     
-    padding-top:140px;
+    padding-top: 50px;
     
 }
 
@@ -204,9 +204,7 @@ section a {
 
 #intro {
   
-  margin-bottom: 50px;
- 
-  height: 500px;
+  height: 300px;
   background: url(images/gis_blue_header.jpg)
               no-repeat 
               100%;
