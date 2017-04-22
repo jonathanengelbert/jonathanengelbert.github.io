@@ -493,6 +493,17 @@ footer p {
     height: 600px;
 }
 
+.webp {
+    
+    
+    text-align: center;
+    font-size: 1.5rem;
+    display:block;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
 
 /* RESEARCH SECTION */
 
