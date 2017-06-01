@@ -1,18 +1,12 @@
     <!-- 
-    File name: portfolio_index.html
+    File name: scripts.html
     Original local path: C:\Users\jonat\Desktop\html\portfolio
     By: Jonathan Engelbert
-    Last Modified: 03/30/2017
+    Last Modified: 05/30/2017
 
-    * This is the index page of my portfolio, currently hosted at https://github.com/jonathanengelbert
+    * Script section.
 
     * The master stylesheet is "portfolio.css"
-
-
-    *********************CONTENTS**********************************
-
-    1 ** 
-
 
     -->
 
@@ -78,6 +72,63 @@
 <main>
 <h2>Python Scripts</h2>    
 
+    <h3 style="font-size: 2rem">Automated Buffer</h3>
+    
+<p class="webp" style="margin-top: 100px">This script creates a new layer our of a selection and then buffers the new layer.
+Great to automate several buffers at once, or for very large datasets that would 
+take a long time to process (ArcGIS). 
+          <pre class="codesnip">
+        <code>
+       
+
+#Jonathan Engelbert, 05/30/2017
+
+
+
+import arcpy
+from arcpy import env
+env.workspace = #enter workspace path here
+
+sql1 = #enter SQL expression here
+
+arcpy.Select_analysis(#"layer to be selected", "path and name of the file as output", sql1)
+arcpy.Buffer_analysis(#"path and name layer to be buffered", "path and name of the file as output, "buffer EX: 2 MILE")
+
+input("EXIT") #Keeping this here so user can actually read the output before python closes it out.
+
+
+      </code>
+     
+    
+      </pre>     
+    <h3 style="font-size: 2rem">Search Cursor Iteration</h3>
+<p class="webp" style="margin-top: 100px">Looks through a shapefile, sorts and prints formatted information after iteration (ArcGIS).
+          <pre class="codesnip">
+        <code>
+       
+
+import arcpy
+# Open a searchcursor
+# Input: C:/Data/Counties.shp
+# Fields: NAME; STATE_NAME; POP2000
+# Sort fields: STATE_NAME A; POP2000 D
+rows = arcpy.SearchCursor("c:/data/counties.shp",
+                            fields="NAME; STATE_NAME; POP2000",
+                            sort_fields="STATE_NAME A; POP2000 D")
+
+# Iterate through the rows in the cursor and prints out formated information. In this example case, it returns state name, county and population of each.
+
+for row in rows:
+    print("State: {0}, County: {1}, Population: {2}".format(
+      row.getValue("STATE_NAME"),   
+      row.getValue("NAME"),
+      row.getValue("POP2000")))
+
+
+      </code>
+     
+      </pre>     
+    
 </main>
 
 <div id="contact">
@@ -92,7 +143,7 @@
  
 <footer>     
      
-<p> &copy; 2017 Coded and mantained by <b>Jonathan Engelbert</b></p> 
+<p> &copy; 2017 Coded and maintained by <b>Jonathan Engelbert</b></p> 
     
 </footer>    
     
